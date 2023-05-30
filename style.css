@@ -132,6 +132,7 @@ main
     {
         background-image: url(./images/bg-mobile.svg);
         align-items: center;
+									height: 100vh;
     }   
     
     main

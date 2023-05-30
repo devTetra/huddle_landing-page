@@ -1,0 +1,172 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #674baf;
+    background-image: url(./images/bg-desktop.svg);
+    background-size : contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header img
+{
+    width: 200px;
+    padding: 20px;
+}
+
+main
+{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mockup, .writeup
+{
+    padding: 20px;
+}
+
+.writeup
+{
+    color: white;
+    height: 400px;
+}
+
+.writeup h1
+{
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.writeup p
+{
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.writeup button
+{
+    margin-top: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    color: #674baf;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.writeup button:hover
+{
+    background-color: #e882e8;
+    color: white;
+}
+
+.social
+{
+    width: 140px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+.social div
+{
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social div:hover
+{
+    border-color:#e882e8;
+}
+
+.social div a
+{
+    color: white;
+}
+
+.social div a:hover
+{
+    color: #e882e8;
+}
+
+.attribution 
+{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a 
+{ 
+    color: white; 
+}
+
+@media screen and (min-width:320px) and (max-width:480px) 
+{
+    body
+    {
+        background-image: url(./images/bg-mobile.svg);
+        align-items: center;
+    }   
+    
+    main
+    {
+        flex-direction: column;
+    }
+
+    header
+    {
+        width: 100vw;
+    }
+
+    .mockup img
+    {
+        width: 80vw;
+        padding-bottom: 20px;
+    }
+
+    .writeup
+    {
+        text-align: center;
+    }
+
+    .writeup h1
+    {
+        font-size: 30px;
+    }
+
+    .writeup button
+    {
+        width: 60vw;
+    }
+
+    .social
+    {
+        margin-bottom: 20px;
+        position: static;
+    }
+}
